@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TicTacToe on the BlockChain</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="index.js"></script>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+    <h1>TicTacToe</h1>
+    <h2>Distributed TicTacToe on the Blockchain</h2>
+
+    <br><br><button id="create" onclick="App.createNewGame()" class="btn btn-primary">Create Game</button> - or -  <button id="join" onclick="App.joinGame()" class="btn btn-default">Join Game</button>
+    <br><br><button id="test" onclick="App.useAccountOne()" class="btn btn-sm">Use Account #2</button>
+    <br><br>
+    <table id="board" style="width:300px; height:300px; margin: 0 auto;">
+            <tbody>
+            <tr>
+              <td style="border: 1px solid;"></td>
+              <td style="border: 1px solid;"></td>
+              <td style="border: 1px solid;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid;"></td>
+              <td style="border: 1px solid;"></td>
+              <td style="border: 1px solid;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid;"></td>
+              <td style="border: 1px solid;"></td>
+              <td style="border: 1px solid;"></td>
+            </tr>
+            </tbody>
+    </table>
+    <p id="status"></p>
+    <p>
+      <strong>Hint:</strong> open the browser developer console to view any
+      errors and warnings.
+    </p>
+
+  </body>
+</html>
